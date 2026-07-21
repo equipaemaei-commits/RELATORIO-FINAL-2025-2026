@@ -2,7 +2,7 @@
 <html lang="pt">
 <head>
   <meta charset="UTF-8">
-  <title>Relatório de Final de Ano Letivo – EMAEI</title>
+  <title>Relatório de Final de Ano Letivo - EMAEI</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     :root {
@@ -11,6 +11,7 @@
       --primary: #4A90E2;
       --accent: #7B61FF;
       --danger: #D0021B;
+      --orange: #F5A623;
       --success: #417505;
       --border-soft: #dde3f0;
       --text-main: #222;
@@ -141,7 +142,7 @@
     }
 
     .card-warning {
-      border-left: 5px solid #F5A623;
+      border-left: 5px solid var(--orange);
     }
 
     .card-danger {
@@ -182,6 +183,28 @@
 
     ul li {
       margin-bottom: 4px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+
+    th, td {
+      border: 1px solid var(--border-soft);
+      padding: 6px 8px;
+      font-size: 0.9rem;
+    }
+
+    th {
+      background: #eef2ff;
+      text-align: left;
+    }
+
+    img {
+      max-width: 100%;
     }
 
     @media (max-width: 800px) {
@@ -228,7 +251,14 @@
       <div class="card card-accent">
         <p><strong>Agrupamento de Escolas de Monchique</strong><br>
         <strong>Equipa Multidisciplinar de Apoio à Educação Inclusiva (EMAEI)</strong></p>
-        <p>Relatório elaborado nos termos do DL 54/2018, integrando a intervenção da EMAEI ao longo do ano letivo.</p>
+        <p>Relatório de final de ano letivo elaborado nos termos do enquadramento legal da educação inclusiva, integrando a intervenção da EMAEI ao longo do ano.</p>
+      </div>
+      <div class="card card-muted">
+        <p><strong>Documentos de referência:</strong></p>
+        <ul>
+          <li>Relatório de Final de Ano Letivo – EMAEI (PDF).</li>
+          <li>Folha de cálculo de caracterização quantitativa (Google Sheets).</li>
+        </ul>
       </div>
       <a class="back-top" href="#inicio">⬆️ Voltar ao topo</a>
     </section>
@@ -237,16 +267,15 @@
     <section id="introducao">
       <h3>🌐 1. Introdução e Enquadramento Geral</h3>
       <div class="card card-muted card-accent">
-        <p>Este relatório sintetiza o trabalho desenvolvido pela EMAEI, articulando triagem de casos, consultadoria, acompanhamento de alunos, apoio a docentes e gestão digital de processos.</p>
+        <p>Ao longo do ano letivo, a EMAEI desenvolveu um trabalho sistemático de acompanhamento, consultadoria e articulação com os diferentes intervenientes educativos, assegurando a análise de situações sinalizadas, a definição de medidas de suporte à aprendizagem e à inclusão e o acompanhamento da sua implementação.</p>
+        <p>Este relatório sintetiza o trabalho realizado, a caracterização da população escolar abrangida, a análise das condições internas e externas que influenciam a intervenção da equipa e as recomendações para o ano seguinte.</p>
       </div>
       <div class="card">
-        <p><strong>Pontos-chave:</strong></p>
+        <p><strong>Pontos-chave da introdução:</strong></p>
         <ul>
-          <li>Transição de gestão e consolidação da equipa.</li>
-          <li>Metodologia digital de organização de documentos e processos.</li>
-          <li>Triagem diária de situações sinalizadas.</li>
-          <li>Promoção da literacia digital junto de docentes e técnicos.</li>
-          <li>Enquadramento legal no âmbito do DL 54/2018.</li>
+          <li>Enquadramento da EMAEI no contexto do Agrupamento.</li>
+          <li>Metodologia de trabalho: triagem, análise, decisão, acompanhamento.</li>
+          <li>Articulação com docentes, direção, serviços externos e famílias.</li>
         </ul>
       </div>
       <a class="back-top" href="#inicio">⬆️ Voltar ao topo</a>
@@ -256,12 +285,68 @@
     <section id="caracterizacao">
       <h3>📊 2. Caracterização Quantitativa da População Escolar Abrangida</h3>
       <div class="card card-warning">
-        <p>Resumo da população escolar acompanhada pela EMAEI, por ciclo de ensino e tipologia de intervenção.</p>
+        <p>Resumo da população escolar acompanhada pela EMAEI, por ciclo de ensino e tipologia de intervenção, com base nos dados sistematizados na folha de cálculo de caracterização quantitativa.</p>
       </div>
+
+      <!-- BOTÕES / PILLS PARA CICLOS -->
       <div class="card">
         <p><span class="pill">Pré‑escolar</span><span class="pill">1.º Ciclo</span><span class="pill">2.º Ciclo</span><span class="pill">3.º Ciclo</span><span class="pill">Totais do Agrupamento</span></p>
-        <p>Aqui podes inserir as tuas tabelas originais (copiadas do relatório em PDF ou Docs), mantendo a estrutura quantitativa por ciclo e por tipo de medida.</p>
+        <p>Os dados quantitativos por ciclo e por tipo de medida encontram-se detalhados nas tabelas e gráficos abaixo, construídos a partir da folha de cálculo do Google Sheets.</p>
       </div>
+
+      <!-- TABELA EXEMPLO – SUBSTITUIR PELOS DADOS REAIS DO SHEETS -->
+      <div class="card">
+        <p><strong>Tabela de síntese por ciclo (exemplo – substituir pelos dados reais):</strong></p>
+        <table>
+          <tr>
+            <th>Ciclo</th>
+            <th>N.º de alunos acompanhados</th>
+            <th>Principais medidas</th>
+          </tr>
+          <tr>
+            <td>Pré‑escolar</td>
+            <td><!-- colocar valor do Sheets --></td>
+            <td><!-- descrição das medidas --></td>
+          </tr>
+          <tr>
+            <td>1.º Ciclo</td>
+            <td><!-- colocar valor do Sheets --></td>
+            <td><!-- descrição das medidas --></td>
+          </tr>
+          <tr>
+            <td>2.º Ciclo</td>
+            <td><!-- colocar valor do Sheets --></td>
+            <td><!-- descrição das medidas --></td>
+          </tr>
+          <tr>
+            <td>3.º Ciclo</td>
+            <td><!-- colocar valor do Sheets --></td>
+            <td><!-- descrição das medidas --></td>
+          </tr>
+          <tr>
+            <td><strong>Total</strong></td>
+            <td><!-- total do Sheets --></td>
+            <td><!-- síntese global --></td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- GRÁFICO INCORPORADO DO GOOGLE SHEETS (EXEMPLO) -->
+      <div class="card">
+        <p><strong>Gráfico – Distribuição por ciclo (incorporado do Sheets):</strong></p>
+        <!-- PASSOS:
+             1. No Sheets, seleciona o gráfico.
+             2. Clica em "Publicar gráfico" → "Incorporar".
+             3. Copia o código <iframe> que o Sheets gera.
+             4. Substitui o iframe abaixo pelo código real. -->
+        <iframe
+          src="https://docs.google.com/spreadsheets/d/1bJ5I9H35E58uf2JFpZpphZ2sVOKcsg9XfA9ONaF70Vk/pubchart?oid=123456&amp;format=interactive"
+          width="600"
+          height="400"
+          frameborder="0">
+        </iframe>
+      </div>
+
       <a class="back-top" href="#inicio">⬆️ Voltar ao topo</a>
     </section>
 
@@ -269,16 +354,16 @@
     <section id="trabalho_emaei">
       <h3>🛠️ 3. Trabalho Efetuado pela EMAEI</h3>
       <div class="card card-success">
-        <p>A EMAEI desenvolveu trabalho contínuo de consultadoria, análise de casos, produção de documentos, articulação com serviços e formação interna ao longo do ano letivo.</p>
+        <p>A EMAEI desenvolveu trabalho contínuo de consultadoria, análise de casos, produção de documentos, articulação com serviços e formação interna, assegurando a resposta às necessidades educativas especiais e às situações de risco identificadas.</p>
       </div>
       <div class="card">
-        <p><strong>Áreas de atuação:</strong></p>
+        <p><strong>Principais áreas de atuação:</strong></p>
         <ul>
-          <li>Organização do Drive institucional e pastas da EMAEI.</li>
-          <li>Reformulação de instrumentos de recolha de informação e relatórios.</li>
-          <li>Criação de guias digitais e modelos de apoio à prática docente.</li>
-          <li>Consultadoria a docentes, diretores de turma e serviços externos.</li>
-          <li>Reuniões, atas e acompanhamento de casos complexos.</li>
+          <li>Organização do repositório digital (Drive) e dos instrumentos de trabalho.</li>
+          <li>Reformulação de modelos de recolha de informação, relatórios e planos.</li>
+          <li>Elaboração de pareceres e propostas de medidas de suporte.</li>
+          <li>Consultadoria a docentes, diretores de turma e órgãos de gestão.</li>
+          <li>Articulação com serviços de saúde, ação social e outras entidades.</li>
         </ul>
       </div>
       <a class="back-top" href="#inicio">⬆️ Voltar ao topo</a>
@@ -288,22 +373,26 @@
     <section id="swot">
       <h3>🔍 4. Análise SWOT</h3>
       <div class="card card-danger">
-        <p>Análise estratégica das condições internas e externas que influenciam o trabalho da EMAEI.</p>
+        <p>Análise das forças, fraquezas, oportunidades e ameaças que condicionam o trabalho da EMAEI e a implementação das medidas de educação inclusiva.</p>
       </div>
+
       <div class="card">
         <p><strong>Forças:</strong></p>
         <ul>
-          <li>Equipa multidisciplinar com experiência e articulação interna.</li>
+          <li>Equipa multidisciplinar com experiência e compromisso.</li>
           <li>Utilização de ferramentas digitais para gestão de processos.</li>
+          <li>Articulação com direção e docentes.</li>
         </ul>
       </div>
+
       <div class="card">
         <p><strong>Fraquezas:</strong></p>
         <ul>
           <li>Tempo limitado para acompanhamento aprofundado de todos os casos.</li>
-          <li>Necessidade de formação contínua em algumas áreas específicas.</li>
+          <li>Necessidade de formação contínua em áreas específicas.</li>
         </ul>
       </div>
+
       <div class="card">
         <p><strong>Oportunidades:</strong></p>
         <ul>
@@ -311,13 +400,15 @@
           <li>Desenvolvimento de recursos digitais partilhados.</li>
         </ul>
       </div>
+
       <div class="card">
         <p><strong>Ameaças:</strong></p>
         <ul>
-          <li>Alterações legislativas e constrangimentos de recursos.</li>
+          <li>Constrangimentos de recursos humanos e materiais.</li>
           <li>Pressão sobre resultados sem considerar a diversidade de perfis.</li>
         </ul>
       </div>
+
       <a class="back-top" href="#inicio">⬆️ Voltar ao topo</a>
     </section>
 
@@ -325,14 +416,14 @@
     <section id="recomendacoes">
       <h3>🚀 5. Recomendações e Propostas de Melhoria</h3>
       <div class="card card-success card-muted">
-        <p>Propostas de melhoria para o próximo ano letivo, com foco na organização pedagógica, literacia digital e articulação comunitária.</p>
+        <p>As recomendações visam reforçar a organização pedagógica, a literacia digital, a articulação com serviços e a monitorização das medidas de suporte à aprendizagem e à inclusão.</p>
       </div>
       <div class="card">
         <p><strong>Eixos de melhoria:</strong></p>
         <ul>
-          <li>Organização pedagógica e clarificação de procedimentos.</li>
-          <li>Reforço da literacia digital de docentes e técnicos.</li>
-          <li>Gestão de recursos humanos e materiais afetos à educação inclusiva.</li>
+          <li>Clarificação de procedimentos e fluxos de comunicação.</li>
+          <li>Reforço da formação e da literacia digital de docentes e técnicos.</li>
+          <li>Gestão de recursos afetos à educação inclusiva.</li>
           <li>Articulação com serviços de saúde, ação social e comunidade.</li>
           <li>Monitorização sistemática das medidas implementadas.</li>
         </ul>
@@ -344,11 +435,11 @@
     <section id="indice_final">
       <h3>📑 Índice Final</h3>
       <div class="card card-muted">
-        <p>Este índice final permite uma consulta rápida das principais secções do relatório:</p>
+        <p>Índice final para consulta rápida das principais secções do relatório:</p>
         <ul>
           <li>📘 Identificação</li>
           <li>🌐 Introdução e Enquadramento Geral</li>
-          <li>📊 Caracterização Quantitativa</li>
+          <li>📊 Caracterização Quantitativa da População Escolar Abrangida</li>
           <li>🛠️ Trabalho Efetuado pela EMAEI</li>
           <li>🔍 Análise SWOT</li>
           <li>🚀 Recomendações e Propostas de Melhoria</li>
