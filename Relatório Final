@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Relatório de Final de Ano Letivo – EMAEI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --bg-card: #ffffff;
+      --primary: #4A90E2;
+      --accent: #7B61FF;
+      --danger: #D0021B;
+      --success: #417505;
+      --border-soft: #dde3f0;
+      --text-main: #222;
+      --text-muted: #666;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text-main);
+      line-height: 1.6;
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* Menu lateral */
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 260px;
+      height: 100vh;
+      background: #f5f5f5;
+      border-right: 1px solid var(--border-soft);
+      padding: 20px 16px;
+      overflow-y: auto;
+    }
+
+    .sidebar h1 {
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+      color: var(--primary);
+    }
+
+    .sidebar small {
+      display: block;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+
+    .nav-section-title {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      margin: 16px 0 8px;
+    }
+
+    .nav-link {
+      display: block;
+      padding: 8px 10px;
+      margin-bottom: 4px;
+      border-radius: 6px;
+      text-decoration: none;
+      color: var(--text-main);
+      font-size: 0.9rem;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    .nav-link:hover {
+      background: #e6f0ff;
+      color: var(--primary);
+    }
+
+    .nav-link span {
+      margin-right: 6px;
+    }
+
+    /* Conteúdo principal */
+    .content {
+      margin-left: 260px;
+      padding: 24px 32px;
+      max-width: 960px;
+      width: 100%;
+    }
+
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 24px;
+    }
+
+    .top-bar h2 {
+      font-size: 1.4rem;
+      color: var(--primary);
+    }
+
+    .top-bar .tag {
+      font-size: 0.8rem;
+      padding: 4px 8px;
+      border-radius: 999px;
+      background: #e6f0ff;
+      color: var(--accent);
+    }
+
+    section {
+      margin-bottom: 32px;
+    }
+
+    section h3 {
+      font-size: 1.2rem;
+      margin-bottom: 12px;
+      color: var(--primary);
+    }
+
+    .card {
+      background: var(--bg-card);
+      border-radius: 10px;
+      border: 1px solid var(--border-soft);
+      padding: 16px 18px;
+      margin-bottom: 12px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+    }
+
+    .card-muted {
+      background: #f8f9fd;
+    }
+
+    .card-accent {
+      border-left: 5px solid var(--accent);
+    }
+
+    .card-warning {
+      border-left: 5px solid #F5A623;
+    }
+
+    .card-danger {
+      border-left: 5px solid var(--danger);
+    }
+
+    .card-success {
+      border-left: 5px solid var(--success);
+    }
+
+    .pill {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: #eef2ff;
+      color: var(--accent);
+      font-size: 0.8rem;
+      margin-right: 6px;
+      margin-bottom: 4px;
+    }
+
+    .back-top {
+      display: inline-block;
+      margin-top: 8px;
+      font-size: 0.85rem;
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .back-top:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      margin-left: 18px;
+      margin-top: 6px;
+    }
+
+    ul li {
+      margin-bottom: 4px;
+    }
+
+    @media (max-width: 800px) {
+      .sidebar {
+        position: static;
+        width: 100%;
+        height: auto;
+      }
+      .content {
+        margin-left: 0;
+        padding: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- MENU LATERAL -->
+  <nav class="sidebar">
+    <h1>Relatório de Final de Ano Letivo</h1>
+    <small>EMAEI – Agrupamento de Escolas de Monchique</small>
+
+    <div class="nav-section-title">Navegação</div>
+    <a class="nav-link" href="#inicio"><span>🏠</span>Início</a>
+    <a class="nav-link" href="#identificacao"><span>📘</span>Identificação</a>
+    <a class="nav-link" href="#introducao"><span>🌐</span>Introdução</a>
+    <a class="nav-link" href="#caracterizacao"><span>📊</span>Caracterização</a>
+    <a class="nav-link" href="#trabalho_emaei"><span>🛠️</span>Trabalho EMAEI</a>
+    <a class="nav-link" href="#swot"><span>🔍</span>Análise SWOT</a>
+    <a class="nav-link" href="#recomendacoes"><span>🚀</span>Recomendações</a>
+    <a class="nav-link" href="#indice_final"><span>📑</span>Índice Final</a>
+  </nav>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main class="content">
+    <div class="top-bar" id="inicio">
+      <h2>Relatório de Final de Ano Letivo – EMAEI</h2>
+      <span class="tag">Versão digital interativa</span>
+    </div>
+
+    <!-- IDENTIFICAÇÃO -->
+    <section id="identificacao">
+      <h3>📘 Identificação</h3>
+      <div class="card card-accent">
+        <p><strong>Agrupamento de Escolas de Monchique</strong><br>
+        <strong>Equipa Multidisciplinar de Apoio à Educação Inclusiva (EMAEI)</strong></p>
+        <p>Relatório elaborado nos termos do DL 54/2018, integrando a intervenção da EMAEI ao longo do ano letivo.</p>
+      </div>
+      <a class="back-top" href="#inicio">⬆️ Voltar ao topo</a>
+    </section>
+
+    <!-- INTRODUÇÃO -->
+    <section id="introducao">
+      <h3>🌐 1. Introdução e Enquadramento Geral</h3>
+      <div class="card card-muted card-accent">
+        <p>Este relatório sintetiza o trabalho desenvolvido pela EMAEI, articulando triagem de casos, consultadoria, acompanhamento de alunos, apoio a docentes e gestão digital de processos.</p>
+      </div>
+      <div class="card">
+        <p><strong>Pontos-chave:</strong></p>
+        <ul>
+          <li>Transição de gestão e consolidação da equipa.</li>
+          <li>Metodologia digital de organização de documentos e processos.</li>
+          <li>Triagem diária de situações sinalizadas.</li>
+          <li>Promoção da literacia digital junto de docentes e técnicos.</li>
+          <li>Enquadramento legal no âmbito do DL 54/2018.</li>
+        </ul>
+      </div>
+      <a class="back-top" href="#inicio">⬆️ Voltar ao topo</a>
+    </section>
+
+    <!-- CARACTERIZAÇÃO QUANTITATIVA -->
+    <section id="caracterizacao">
+      <h3>📊 2. Caracterização Quantitativa da População Escolar Abrangida</h3>
+      <div class="card card-warning">
+        <p>Resumo da população escolar acompanhada pela EMAEI, por ciclo de ensino e tipologia de intervenção.</p>
+      </div>
+      <div class="card">
+        <p><span class="pill">Pré‑escolar</span><span class="pill">1.º Ciclo</span><span class="pill">2.º Ciclo</span><span class="pill">3.º Ciclo</span><span class="pill">Totais do Agrupamento</span></p>
+        <p>Aqui podes inserir as tuas tabelas originais (copiadas do relatório em PDF ou Docs), mantendo a estrutura quantitativa por ciclo e por tipo de medida.</p>
+      </div>
+      <a class="back-top" href="#inicio">⬆️ Voltar ao topo</a>
+    </section>
+
+    <!-- TRABALHO EFETUADO PELA EMAEI -->
+    <section id="trabalho_emaei">
+      <h3>🛠️ 3. Trabalho Efetuado pela EMAEI</h3>
+      <div class="card card-success">
+        <p>A EMAEI desenvolveu trabalho contínuo de consultadoria, análise de casos, produção de documentos, articulação com serviços e formação interna ao longo do ano letivo.</p>
+      </div>
+      <div class="card">
+        <p><strong>Áreas de atuação:</strong></p>
+        <ul>
+          <li>Organização do Drive institucional e pastas da EMAEI.</li>
+          <li>Reformulação de instrumentos de recolha de informação e relatórios.</li>
+          <li>Criação de guias digitais e modelos de apoio à prática docente.</li>
+          <li>Consultadoria a docentes, diretores de turma e serviços externos.</li>
+          <li>Reuniões, atas e acompanhamento de casos complexos.</li>
+        </ul>
+      </div>
+      <a class="back-top" href="#inicio">⬆️ Voltar ao topo</a>
+    </section>
+
+    <!-- ANÁLISE SWOT -->
+    <section id="swot">
+      <h3>🔍 4. Análise SWOT</h3>
+      <div class="card card-danger">
+        <p>Análise estratégica das condições internas e externas que influenciam o trabalho da EMAEI.</p>
+      </div>
+      <div class="card">
+        <p><strong>Forças:</strong></p>
+        <ul>
+          <li>Equipa multidisciplinar com experiência e articulação interna.</li>
+          <li>Utilização de ferramentas digitais para gestão de processos.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p><strong>Fraquezas:</strong></p>
+        <ul>
+          <li>Tempo limitado para acompanhamento aprofundado de todos os casos.</li>
+          <li>Necessidade de formação contínua em algumas áreas específicas.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p><strong>Oportunidades:</strong></p>
+        <ul>
+          <li>Parcerias com serviços externos e comunidade educativa.</li>
+          <li>Desenvolvimento de recursos digitais partilhados.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p><strong>Ameaças:</strong></p>
+        <ul>
+          <li>Alterações legislativas e constrangimentos de recursos.</li>
+          <li>Pressão sobre resultados sem considerar a diversidade de perfis.</li>
+        </ul>
+      </div>
+      <a class="back-top" href="#inicio">⬆️ Voltar ao topo</a>
+    </section>
+
+    <!-- RECOMENDAÇÕES -->
+    <section id="recomendacoes">
+      <h3>🚀 5. Recomendações e Propostas de Melhoria</h3>
+      <div class="card card-success card-muted">
+        <p>Propostas de melhoria para o próximo ano letivo, com foco na organização pedagógica, literacia digital e articulação comunitária.</p>
+      </div>
+      <div class="card">
+        <p><strong>Eixos de melhoria:</strong></p>
+        <ul>
+          <li>Organização pedagógica e clarificação de procedimentos.</li>
+          <li>Reforço da literacia digital de docentes e técnicos.</li>
+          <li>Gestão de recursos humanos e materiais afetos à educação inclusiva.</li>
+          <li>Articulação com serviços de saúde, ação social e comunidade.</li>
+          <li>Monitorização sistemática das medidas implementadas.</li>
+        </ul>
+      </div>
+      <a class="back-top" href="#inicio">⬆️ Voltar ao topo</a>
+    </section>
+
+    <!-- ÍNDICE FINAL -->
+    <section id="indice_final">
+      <h3>📑 Índice Final</h3>
+      <div class="card card-muted">
+        <p>Este índice final permite uma consulta rápida das principais secções do relatório:</p>
+        <ul>
+          <li>📘 Identificação</li>
+          <li>🌐 Introdução e Enquadramento Geral</li>
+          <li>📊 Caracterização Quantitativa</li>
+          <li>🛠️ Trabalho Efetuado pela EMAEI</li>
+          <li>🔍 Análise SWOT</li>
+          <li>🚀 Recomendações e Propostas de Melhoria</li>
+        </ul>
+      </div>
+      <a class="back-top" href="#inicio">⬆️ Voltar ao topo</a>
+    </section>
+
+  </main>
+</body>
+</html>
